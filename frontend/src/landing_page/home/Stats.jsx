@@ -37,11 +37,11 @@ function Stats() {
                 <div className="text-center d-flex justify-content-center">
                     <a href="" className='me-5' style={{ textDecoration: "none" }}>
                     Explore our products{" "}
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </a>
                     <a href="" style={{ textDecoration: "none" }}>
                     Try Kite demo{" "}
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </a>
                 </div>
             </>

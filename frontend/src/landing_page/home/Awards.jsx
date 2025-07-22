@@ -8,7 +8,7 @@ function Awards() {
     <Card
 
         left = {
-        <div className="d-flex flex-column align-items-center">
+        <div className="d-flex justify-content-center align-items-center">
           <img className='img-fluid' src="media/images/largestBroker.svg" />
         </div>
         }

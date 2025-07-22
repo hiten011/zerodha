@@ -1,9 +1,38 @@
-import React from 'react';
+import React from "react";
 
-function Awards(){
-    return (
-        <h1>Awards</h1>
-    );
+import List from '../List';
+import Card from '../Card'
+
+function Awards() {
+  return (
+    <Card
+
+        left = {
+          <img className="img-fluid" src="media/images/largestBroker.svg" />
+        }
+        
+        right = {
+        <>
+          <h1>Largest stock broker in India</h1>
+          <p className="mb-5">
+            2+ million Zerodha clients contribute to over 15% of all retail
+            order volumes in India daily by trading and investing in:
+          </p>
+
+          <div className="row d-flex justify-content-evenly">
+            <div className="col-6 d-flex justify-content-center">
+              <List list={["Futures and Options", "Commodity derivatives", "Currency derivatives"]}/>
+            </div>
+            <div className="col-6 d-flex justify-content-center">
+              <List list={["Futures and Options", "Commodity derivatives", "Currency derivatives"]}/>
+            </div>
+          </div>
+
+          <img className="mx-auto d-block" src="media/images/pressLogos.png" style={{ width: "90%" }} />
+        </>
+        }
+    />
+  );
 }
 
 export default Awards;

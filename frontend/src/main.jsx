@@ -5,7 +5,9 @@ import './index.css'
 import HomePage from './landing_page/home/HomePage'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-      <HomePage />
-  </StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<HomePage />}></Route>
+    </Routes>
+  </BrowserRouter>
 )

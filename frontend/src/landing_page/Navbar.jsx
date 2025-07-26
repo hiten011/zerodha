@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
 	return (
@@ -8,14 +9,14 @@ function Navbar() {
 		>
 			<div className="container-fluid d-flex justify-content-between align-items-center p-1">
                 <div className="ms-5">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img
                             className="img-fluid"
                             src="media/images/logo.svg"
                             style={{ maxWidth: "130px" }}
                             alt="Logo"
                         />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="me-5">
@@ -33,21 +34,21 @@ function Navbar() {
 
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <a className="nav-link me-4" href="#">
+                            <Link className="nav-link me-4" to="signup">
                                 Signup
-                            </a>
-                            <a className="nav-link me-4" href="#">
+                            </Link>
+                            <Link className="nav-link me-4" to="about">
                                 About
-                            </a>
-                            <a className="nav-link me-4" href="#">
+                            </Link>
+                            <Link className="nav-link me-4" to="product">
                                 Product
-                            </a>
-                            <a className="nav-link me-4" href="#">
+                            </Link>
+                            <Link className="nav-link me-4" to="pricing">
                                 Pricing
-                            </a>
-                            <a className="nav-link" href="#">
+                            </Link>
+                            <Link className="nav-link" to="support">
                                 Support
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
